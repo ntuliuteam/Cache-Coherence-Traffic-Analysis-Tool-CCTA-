@@ -245,6 +245,9 @@ structure (CacheMemory, external = "yes") {
   void profilePrefetchMiss();
 
   //add this
+  // CCTA: MESI Three-Level L0 <-> L1 traffic
+  void profile_l0_l1();
+  void profile_l1_l0();
   void profile_l1_l2();
   void profile_l1_l1();
   void profile_l1_dir();
